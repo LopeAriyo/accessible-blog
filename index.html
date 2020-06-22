@@ -3,11 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Accessible Blog</title>
+        <link rel="stylesheet" href="/styles/main.css">
+        <!-- <link rel="stylesheet" href="/styles/debug.css"> -->
+        <!-- <link rel="stylesheet" href="/styles/pages/homepage.css" -->
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="left-side-nav">
                 <ul>
                     <li>Food</li>
                     <li>Drink</li>
@@ -15,8 +18,8 @@
                     <li>Lifestyle</li>
                 </ul>
             </nav>
-            <a href="/#">Blog Name</a>
-            <nav>
+            <a href="/#" class="logo">Blog Name</a>
+            <nav class="right-side-nav">
                 <ul>
                     <li>Shop</li>
                     <li>Subscribe</li>
@@ -27,12 +30,16 @@
         </header>
         <hr >
         <main>
-            <section>
-                <h2 class="featured">Most Recent</h2>
-                <article>
-                    <img src="Whiskey-Sour.jpg" alt="WhiskeySour Drink" width="800"></img> 
-                    <div class="blog-post-preview"> 
-                        <h4>Category</h4> <h4>Publish Date</h4>
+            <section class="hero">
+                
+                <article class= "featured-post">
+                    <div class="featured-slide-banner"></div>
+                    <h2 class="featured-header">Most Recent</h2>
+                    <img src="/images/Whiskey-Sour.jpg" alt="Whiskey Sour Drink" class="featured-image"></img> 
+                    <section class="featured-content"> 
+                       
+                            <h4>Category</h4> 
+                       
                         <h3>This Is A Blog Post Tile</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -44,30 +51,10 @@
                         cursus orci egestas eu. Vivamus consequat urna a ipsum
                         tempor elementum.
                     </p>
-                    </div>
-                    <button>Read More</button>
-                </article>
-            </section>
-            <section>
-                <h2 class="featured">Most Popular</h2>
-                <article>
-                    <img src="Pappy-van-Winkle-Jelloman-Cocktail-Drink.jpg" alt="Jelloman Cocktail" width="800"></img> 
-                    <div class="blog-post-preview"> 
-                        <h4>Category</h4> <h4>Publish Date</h4>
-                        <h3>This Is A Blog Post Tile</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin vel mattis leo. Quisque vel tristique nisi, eu
-                        tincidunt felis. Nulla eu tempus massa. Nunc aliquet
-                        nulla at nibh pharetra aliquet. Quisque ornare felis et
-                        pulvinar auctor. Aenean arcu mi, sollicitudin vel libero
-                        quis, vehicula rutrum eros. Donec auctor libero urna, at
-                        cursus orci egestas eu. Vivamus consequat urna a ipsum
-                        tempor elementum.
-                    </p>
-                    </div>
-                    <button>Read More</button>
-                </article>
+                    <button class="featured-button">Read More</button>
+                    </section>
+                    
+                </article> 
             </section>
         </main>
         <hr >
