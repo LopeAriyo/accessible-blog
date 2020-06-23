@@ -1,14 +1,41 @@
-@import "./pages/index.css";
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import "./pages/index.css";
+@import "./shared/navigation.css";
 
 :root {
     font: 18px/1.2 "Raleway", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+}
+
+* {
+    -ms-overflow-style: none;
 }
 
 body,
 body * {
     margin: unset;
     box-sizing: unset;
+    margin: 0 auto;
+    /* padding: 0 1.25rem; */
     padding: unset;
     font-size: unset;
     color: unset;
@@ -25,4 +52,12 @@ h4,
 a,
 p {
     font-family: "Raleway", sans-serif;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
