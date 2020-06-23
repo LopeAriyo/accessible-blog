@@ -46,8 +46,14 @@ body * {
     text-decoration: unset;
 }
 
+body {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 main {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 h1,
