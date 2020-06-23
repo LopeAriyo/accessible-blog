@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .social-media {
+    display: flex;
+    width: 100%;
+    margin: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-rule {
+    width: 30%;
+}

@@ -9,26 +9,26 @@
         <!-- <link rel="stylesheet" href="/styles/pages/homepage.css" -->
     </head>
     <body>
-        <header>
-            <nav class="left-side-nav">
-                <ul>
-                    <li>Food</li>
-                    <li>Drink</li>
-                    <li>Travel</li>
-                    <li>Lifestyle</li>
+        <header id="header"">
+            <nav id="left-side-nav" class="main-nav">
+                <ul class="nav-links">
+                    <li class="nav-link">Food</li>
+                    <li class="nav-link">Drink</li>
+                    <li class="nav-link">Travel</li>
+                    <li class="nav-link">Lifestyle</li>
                 </ul>
             </nav>
-            <a href="/#" class="logo">Blog Name</a>
-            <nav class="right-side-nav">
-                <ul>
-                    <li>Shop</li>
-                    <li>Subscribe</li>
-                    <li>Contact</li>
-                    <li>About</li>
+            <a href="/#" class="logo">My Blog</a>
+            <nav id="right-side-nav" class="main-nav">
+                <ul class="nav-links">
+                    <li class="nav-link">Shop</li>
+                    <li class="nav-link">Subscribe</li>
+                    <li class="nav-link">Contact</li>
+                    <li class="nav-link">About</li>
                 </ul>
             </nav>
         </header>
-        <hr >
+        
         <main>
             <section class="featured-slider">
             <article class="featured-posts" >
@@ -73,15 +73,42 @@
                         </p>
                         <button class="featured-button">Read More</button>
                         </section>
-                        <a href="#most-recent" class="featured-navigation"">See What's New</a>
+                        <a href="#most-recent" class="featured-navigation">See What's New</a>
                     </section> 
                 </article>   
             </section>
+            <section id="most-popular" class= "featured-post" tabindex="0">
+                <div class="featured-slide-banner"></div>
+                <h2 class="featured-header">Most Popular</h2>
+                <img src="/images/Pappy-van-Winkle-Jelloman-Cocktail-Drink.jpg" alt="Jelloman Cocktail" class="featured-image"></img> 
+                <section class="featured-content"> 
+                    <h4>Category 2</h4> 
+                    <h3>Featured Post 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin vel mattis leo. Quisque vel tristique nisi, eu
+                        tincidunt felis. Nulla eu tempus massa. Nunc aliquet
+                        nulla at nibh pharetra aliquet. Quisque ornare felis et
+                        pulvinar auctor. Aenean arcu mi, sollicitudin vel libero
+                        quis, vehicula rutrum eros. Donec auctor libero urna, at
+                        cursus orci egestas eu. Vivamus consequat urna a ipsum
+                        tempor elementum.
+                </p>
+                <button class="featured-button">Read More</button>
+                </section>
+                <a href="#most-recent" class="featured-navigation">See What's New</a>
+            </section> 
         </main>
         <hr >
         <footer>
-            Website created by <a href = "https://lopeariyo.dev">Lope Ariyo</a>
-            Back to Top 
+            <!-- <a href="#header" class="featured-navigation">Back To Top</a> -->
+            <section class="social-media"> 
+                <hr class="footer-rule">
+                <hr class="footer-rule">
+            </section>
+            <p>COPYRIGHT 2020 - LOPE ARIYO</p>
+            <p>Website created by <a href = "https://lopeariyo.dev">Lope Ariyo</a></p>
+           
         </footer>
     </body>
 </html>

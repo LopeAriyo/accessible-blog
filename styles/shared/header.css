@@ -1,0 +1,28 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.6);
+    /* box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.08); */
+    -moz-transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin: 10px;
+    height: 70px;
+    width: 400px;
+    text-align: center;
+    font-family: "Rock Salt", cursive;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
