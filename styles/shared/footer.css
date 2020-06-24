@@ -1,5 +1,5 @@
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     height: 225px;
@@ -45,6 +45,10 @@ footer .social-media-links .social-media-link a i {
     background-color: lawngreen;
 }
 
+footer .social-media-links .social-media-link a p {
+    display: none;
+}
+
 footer .owner,
 footer .author {
     text-transform: uppercase;
@@ -59,4 +63,10 @@ footer .author {
 
 footer .footer-rule {
     margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1440px) {
+    footer .social-media-links .social-media-link a p {
+        display: inline;
+    }
 }

@@ -1,23 +1,22 @@
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 80px;
+    width: 100vw;
+    /* height: 80px; */
     z-index: 10;
     background: rgba(255, 255, 255, 0.6);
-    /* box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.08); */
     -moz-transition: all 0.25s ease-out;
     -webkit-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 .logo {
     margin: 10px;
-    height: 70px;
-    width: 400px;
+    /* height: 70px; */
+    /* width: 400px; */
     text-align: center;
     font-family: "Rock Salt", cursive;
     font-size: 2rem;
@@ -25,4 +24,41 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header .menu-icon {
+    height: 50px;
+    width: 50px;
+    background-color: lawngreen;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+header .logo {
+    grid-area: 1/1/2/2;
+}
+
+@media only screen and (min-width: 767px) {
+    header {
+        grid-template-columns: 5fr 2fr 5fr;
+    }
+    header .logo {
+        grid-area: 1/2/2/3;
+    }
+    header .menu-icon {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    header {
+        grid-template-columns: 1fr 3fr 1fr 2fr 1fr 3fr 1fr;
+    }
+    header .logo {
+        grid-area: 1/4/2/5;
+    }
+    header .menu-icon {
+        display: none;
+    }
 }
