@@ -2,10 +2,11 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     width: 100vw;
     /* height: 80px; */
     z-index: 10;
-    background: rgba(255, 255, 255, 0.6);
+    background: transparent;
     -moz-transition: all 0.25s ease-out;
     -webkit-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
@@ -18,12 +19,15 @@ header {
     /* height: 70px; */
     /* width: 400px; */
     text-align: center;
-    font-family: "Rock Salt", cursive;
+    font-family: "Abril Fatface", cursive;
+    color: rgb(255, 61, 26);
+    /* font-family: "Rock Salt", cursive; */
     font-size: 2rem;
     line-height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 header .menu-icon {
@@ -42,6 +46,7 @@ header .logo {
 @media only screen and (min-width: 767px) {
     header {
         grid-template-columns: 5fr 2fr 5fr;
+        justify-content: space-around;
     }
     header .logo {
         grid-area: 1/2/2/3;
@@ -54,6 +59,7 @@ header .logo {
 @media only screen and (min-width: 1440px) {
     header {
         grid-template-columns: 1fr 3fr 1fr 2fr 1fr 3fr 1fr;
+        justify-content: space-around;
     }
     header .logo {
         grid-area: 1/4/2/5;

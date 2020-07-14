@@ -12,21 +12,70 @@
 }
 
 .nav-links {
-    display: flex;
-    /* width: 600px; */
-    justify-content: space-evenly;
+    width: 500px;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
 }
 
 .nav-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 2px;
     height: 50px;
-    /* width: 100px; */
+    width: 80%;
+    color: rgb(244, 138, 53);
     font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
+    transition: all 0.5s;
+}
+
+.nav-links .nav-link:hover {
+    background: rgba(244, 138, 53, 0.2);
+    color: rgb(255, 61, 26);
+}
+
+.nav-links .nav-link {
+    position: relative;
+    overflow: hidden;
+
+    will-change: color;
+    transition: color 0.25s ease-out;
+}
+
+.nav-links .nav-link::before,
+.nav-links .nav-link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+
+    will-change: width;
+    transition: width 0.1s ease-out;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.nav-links .nav-link::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links .nav-link::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.nav-links .nav-link:hover::before,
+.nav-links .nav-link:hover::after {
+    width: 100%;
+    transition-duration: 0.2s;
 }
 
 @media only screen and (min-width: 767px) {
