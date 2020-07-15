@@ -11,12 +11,65 @@
     display: none;
 }
 
+#responsive-nav {
+    display: flex;
+    grid-area: 1/2/2/3;
+    align-self: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+label #menu-icon,
+label #close-icon {
+    font-size: 35px;
+    color: rgb(255, 61, 26);
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+#res-menu-icons,
+label #close-icon {
+    display: none;
+}
+
+#res-menu-icons:checked ~ ul {
+    left: 0;
+}
+
+#res-menu-icons:checked ~ label #menu-icon {
+    display: none;
+}
+
+#res-menu-icons:checked ~ label #close-icon {
+    display: flex;
+}
+
+#responsive-nav .nav-links {
+    position: fixed;
+    top: 85px;
+    left: 200%;
+    width: 100%;
+    height: 100%;
+    background: rgb(244, 138, 53);
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    transition: left 0.5s;
+}
+
 .nav-links {
     width: 500px;
     justify-content: space-around;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: relative;
+}
+
+#responsive-nav .nav-links .nav-link {
+    color: rgb(255, 255, 255);
 }
 
 .nav-link {
@@ -81,31 +134,39 @@
 @media only screen and (min-width: 767px) {
     #left-side-nav {
         display: flex;
-        grid-area: 1/ 1/2/2;
+        grid-area: 1/1/2/2;
         align-self: center;
         justify-content: center;
     }
 
     #right-side-nav {
         display: flex;
-        grid-area: 1/ 3/2/4;
+        grid-area: 1/3/2/4;
         align-self: center;
         justify-content: center;
+    }
+
+    #responsive-nav {
+        display: none;
     }
 }
 
 @media only screen and (min-width: 1440px) {
     #left-side-nav {
         display: flex;
-        grid-area: 1/ 2/2/3;
+        grid-area: 1/2/2/3;
         align-self: center;
         justify-content: center;
     }
 
     #right-side-nav {
         display: flex;
-        grid-area: 1/ 6/2/7;
+        grid-area: 1/6/2/7;
         align-self: center;
         justify-content: center;
+    }
+
+    #responsive-nav {
+        display: none;
     }
 }
