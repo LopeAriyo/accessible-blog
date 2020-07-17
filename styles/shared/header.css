@@ -5,7 +5,7 @@ header {
     left: 0;
     right: 0;
     width: 100vw;
-    /* height: 80px; */
+    height: 15vh;
     z-index: 10;
     /* background: transparent; */
     background: inherit;
@@ -33,7 +33,7 @@ header {
 }
 
 header .logo {
-    grid-area: 1/1/2/2;
+    grid-area: 1/1/2/3;
 }
 
 @media only screen and (min-width: 767px) {
